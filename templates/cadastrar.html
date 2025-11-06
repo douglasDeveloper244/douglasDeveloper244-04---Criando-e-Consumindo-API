@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar Produto</title>
+  <style>
+    body {
+      background: #f0f2f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    input,
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+    }
+
+    button {
+      background: #4a67f5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #3854d0;
+    }
+
+    a {
+      display: block;
+      margin-top: 15px;
+      text-decoration: none;
+      color: #4a67f5;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Cadastrar Produto</h2>
+    <form method="post">
+      <input name="descricao" placeholder="Descrição" required>
+      <input name="precocompra" type="number" step="0.01" placeholder="Preço de Compra" required>
+      <input name="precovenda" type="number" step="0.01" placeholder="Preço de Venda" required>
+      <button type="submit">Salvar</button>
+    </form>
+    <a href="/produtos/listar">Listar Produtos</a>
+  </div>
+</body>
+
+</html>
