@@ -1,7 +1,8 @@
-from app import db
+from Code.app import db
+
 
 class Produto(db.Model):
-    __tablename__ = 'produtos'
+    __tablename__ = "produtos"
 
     idproduto = db.Column(db.Integer, primary_key=True)
     descricao = db.Column(db.String(100), nullable=False)
@@ -10,4 +11,4 @@ class Produto(db.Model):
     datacriacao = db.Column(db.Date, nullable=False)
 
     def __repr__(self):
-        return f'<Produto {self.descricao}>'
+        return f"<Produto {self.descricao}>"
